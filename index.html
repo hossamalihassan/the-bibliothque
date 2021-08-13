@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bibliothèque</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/Barlow-Black.ttf">
+</head>
+<body>
+    
+    <div class="container">
+        <header class="row">
+            <h1 class="title col-md-12">
+                the bibliothèque
+            </h1>
+
+            <p class="quotes col-md-12">
+                <span class="theQuote" id="quote"></span> 
+                <span class="whoSaidIt" id="person"></span>
+            </p>
+        </header>
+
+        <form class="form row input-group" id="form">
+            <div class="col-md-2">
+                <label class="form-label">Author</label>
+                <input type="text" class="form-control" id="input-1" required>
+            </div>
+
+            <div class="col-md-2">
+                <label class="form-label">Title</label>
+                <input type="text" class="form-control" id="input-2" required>
+            </div>
+
+            <div class="col-md-2">
+                <label class="form-label">Pages</label>
+                <input type="number" class="form-control" id="input-3" required>
+            </div>
+
+            <div class="col-md-2">
+                <div class="form-check align-middle">
+                    <input type="checkbox" class="form-check-input" id="check">
+                    <label class="form-check-label align-middle" for="check">Read ?</label>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-primary submit" id="sbt">Add Book</button>
+            </div>
+
+        </form>
+
+        <section class="books table-responsive">
+            <table class="table table-dark table-striped" id="table">
+                <tr>
+                    <th>Author</th>
+                    <th>Title</th>
+                    <th>Pages</th>
+                    <th>Read ?</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
